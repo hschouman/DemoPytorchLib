@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/demoPytorchLib.svg?style=flat)](https://cocoapods.org/pods/demoPytorchLib)
 [![Platform](https://img.shields.io/cocoapods/p/demoPytorchLib.svg?style=flat)](https://cocoapods.org/pods/demoPytorchLib)
 
+This project was created to demonstrate an issue when LibTorch is packaged as a cocoapods dependency, with tests target execution.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

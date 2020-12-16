@@ -22,21 +22,22 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/hschouman/demoPytorchLib'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hschouman' => 'hugoschouman.pro@gmail.com' }
   s.source           = { :git => 'https://github.com/hschouman/demoPytorchLib.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'demoPytorchLib/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'demoPytorchLib' => ['demoPytorchLib/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.pod_target_xcconfig = {
+      'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/LibTorch/install/include"'
+  }
+  
+  s.static_framework = true
+  
+  s.dependency 'LibTorch'
+  
+  s.library = 'c++', 'stdc++'
+
 end

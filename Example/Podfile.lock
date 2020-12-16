@@ -1,0 +1,27 @@
+PODS:
+  - demoPytorchLib (0.1.0):
+    - LibTorch
+  - LibTorch (1.7.1):
+    - LibTorch/Core (= 1.7.1)
+  - LibTorch/Core (1.7.1):
+    - LibTorch/Torch
+  - LibTorch/Torch (1.7.1)
+
+DEPENDENCIES:
+  - demoPytorchLib (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - LibTorch
+
+EXTERNAL SOURCES:
+  demoPytorchLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  demoPytorchLib: 8405dc728c31629f56c37b543f6d0c98a1120b50
+  LibTorch: cef57cf03fbb7fcc798b9f59dde4302c47d3c50b
+
+PODFILE CHECKSUM: 3a0f557a2881468763d598482b870c184d9c9c7f
+
+COCOAPODS: 1.9.3
